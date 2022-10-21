@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+
+<body>
+   <div class="mainfcfs">
+    <div class="profilefrist">
+        <div class="fristchild">
+            <div class="image">
+                <img src="/Landing-page/omg.jpg" alt="">
+            </div>
+            <p class="fc-pbar">Muhammad Atick</p>
+            <p class="fc-pbar">Web & logo Desinger Bangladesh</p>
+
+            <button class="fc-btn">
+                <i class='bx bxs-envelope fc-ibar'></i>
+                <p>Hire me</p>
+            </button>
+        </div>
+    </div>
+
+    <div class="profilesecond">
+        <div class="secondchild">
+            <p id="icon" onclick="atickvai() "><i class='bx bx-window-close'></i></p>
+            <div class="fs-imgtxt">
+                <div class="image1">
+                    <img src="/Landing-page/omg.jpg" alt="">
+                </div>
+               <div class="text">
+                <p>Muhammad Atick</p>
+                <h3>Web & Logo deginer</h3>
+               </div>
+            </div>
+            <div class="input">
+              <textarea name="" id="" cols="50" rows="9" placeholder="Enter your message..."></textarea>
+            </div>
+            
+            <div class="button">
+                <button class="canceled">Cancel</button>
+                <button class="sended">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="triddiv">
+       <div class="sectried">
+        <i class="uil uil-times-circle"></i>
+        <h1>Oh, sorry</h1>
+        <h2>You have been canceled</h2>
+       </div>
+    </div>
+    <div class="fourdiv">
+       <div class="sectried">
+        <i class="uil uil-check-circle"></i>
+        <h1>Oh, thanks</h1>
+        <h2>You have been Sended</h2>
+       </div>
+    </div>
+   </div>
+
+
+    <script>
+
+            let fc1bottom = document.querySelector(".fc-btn")
+            let fcchange = document.querySelector(".profilefrist")
+            let fschange = document.querySelector(".profilesecond")
+
+            fc1bottom.addEventListener("click" , () => {
+                fcchange.classList.add("fcnewcrete")
+                fschange.classList.add("vaifsnewcrete")
+
+            }) 
+
+            let cancel = document.querySelector(".canceled")
+            let fschange2 = document.querySelector(".profilesecond")
+            let triddivfun = document.querySelector(".triddiv")
+            let sendvai = document.querySelector(".sended")
+            let fourdiv = document.querySelector(".fourdiv")
+            cancel.addEventListener("click" , () => {
+                triddivfun.classList.add("newtridiv")
+                fschange2.classList.add("secdivnew")
+            })
+            sendvai.addEventListener("click" , () => {
+                fourdiv.classList.add("newfourdiv")
+                fschange2.classList.add("secdivnew")
+            })
+
+        // function fcclick() {
+        //     let fc1bottom = document.querySelector(".fc-btn")
+        //     let fcchange = document.querySelector(".fristchild")
+        //     let fschange = document.querySelector(".secondchild")
+
+        // }
+
+        // function atickvai() {
+        // let fcchange = document.querySelector(".profilefrist")
+        // fcchange.classList.remove("fcnewcrete")
+
+        // }
+    </script>
+</body>
+</html>
